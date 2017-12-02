@@ -1,2 +1,2 @@
 # Js_Calculator
-Simple js calculator.
+Simple js calculator
