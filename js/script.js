@@ -49,3 +49,35 @@ del.addEventListener('click', function() {
 
 	}
 });
+
+// theme changer
+var counter = 0;
+
+var myBtn = document.getElementById('change-color-btn').addEventListener('click', function() {
+		if(counter == 0) {
+			document.body.style.background = '#6b46f7';
+			display.style.background = '#6241df';
+			for(var i = 0; i <= numbers.length - 1; i++)
+				numbers[i].style.color = '#6b46f7';
+			for(var i = 0; i <= operators.length - 1; i++) {
+				operators[i].style.background = '#b2a0f8';
+				equal.style.background = '#b2a0f8';
+				del.style.background = '#b2a0f8';
+			}
+			this.style.background = '#f65035';		
+			counter = 1;
+		}
+		else {
+			document.body.style.background = '';
+			display.style.background = '';
+			for(var i = 0; i <= numbers.length - 1; i++)
+				numbers[i].style.color = '';
+			for(var i = 0; i <= operators.length - 1; i++) {
+				operators[i].style.background = '';
+				equal.style.background = '';
+				del.style.background = '';
+			}
+			this.style.background = '';	
+			counter = 0;
+		}
+});
