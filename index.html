@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="calc">
+		<div class="disp">
+			<input type="text" class="disp-input" value="0" disabled>
+		</div>
+		<div class="keypad">
+			<div class="row row-1">
+				<button class="calc-btn operator" id="ac">AC</button>
+				<button class="calc-btn" id="del"><</button>
+				<button class="calc-btn operator" id="module">%</button>
+				<button class="calc-btn operator" id="devide">÷</button>
+			</div>
+			<div class="row row-2">
+				<button class="calc-btn num" id="num num-7">7</button>
+				<button class="calc-btn num" id="num">8</button>
+				<button class="calc-btn num" id="num">9</button>
+				<button class="calc-btn operator" id="multiply">×</button>
+			</div>
+			<div class="row row-3">
+				<button class="calc-btn num" id="num">4</button>
+				<button class="calc-btn num" id="num">5</button>
+				<button class="calc-btn num" id="num">6</button>
+				<button class="calc-btn operator" id="plus">+</button>
+			</div>
+			<div class="row row-4">
+				<button class="calc-btn num" id="num">1</button>
+				<button class="calc-btn num" id="num">2</button>
+				<button class="calc-btn num" id="num">3</button>
+				<button class="calc-btn operator" id="minus">-</button>
+			</div>
+			<div class="row row-5">
+				<button class="calc-btn num zero" id="num">0</button>
+				<button class="calc-btn num" id="decimal">.</button>
+				<button class="calc-btn" id="equal">=</button>
+			</div>
+		</div>
+	</div>
+
+
+
+<script src="js/script.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

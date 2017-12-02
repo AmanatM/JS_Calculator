@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::selection {
+	background: rgba(150, 150, 150, 0.5);
+}
+body {
+	background: #f65035;
+	font-size: 1em;
+}
+
+input {
+	font-size: 3em;
+	border-radius: 5em;
+	border: none;
+	direction: rtl;
+}
+
+div.calc {
+	display: inline-block;
+	margin-left: 4%;
+	margin-top: 3%;
+	max-width: 100%;
+	width: 400px;
+}
+
+div.disp {
+	width: 100%;
+}
+
+div.disp input {
+	box-sizing: border-box;
+	padding: 3% 6%;
+	background: #de4a32;
+	color: #fffefe;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	display: block;
+	width: 92%;
+	margin: 0 auto;
+	margin-bottom: 4%;
+}
+
+div.keypad {
+	text-align: center;
+}
+
+button {
+	cursor: pointer;
+	border-radius: 50%;
+	border: none;
+	box-sizing: border-box;
+	font-size: 2.4em;
+	text-align: center;
+	background: #fcfcfc;
+	color: #f65035;
+	padding: 4% 0;
+	width: 19%;
+	margin: 2%;
+	font-weight: bold;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+	outline: none;
+	transition: all .3s;
+}
+
+button:hover {
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+	transition: all .3s;
+}
+
+button.num:hover {
+	background: #fafafa;
+}
+
+button.zero {
+	width: 43%;
+	border-radius: 2em;
+}
+
+button.operator,
+#del {
+	background: #faa799;
+	color: white;
+}
+
+button#equal {
+	background: #faa799;
+	color: white;
+}
+
+@media screen and (max-width: 430px) {
+	div.calc {
+		margin-left: 0;
+		margin-top: 8%;
+	}
+}
